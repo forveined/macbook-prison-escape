@@ -13,10 +13,7 @@ if [ "$input" != "y" ]; then
   echo "Error: You must agree to use our tool"
   exit 1
 fi
-
-#!/bin/bash
  
-# Check if the command is not found
 if ! command -v "jamf" &> /dev/null; then
   echo "JAMF Has Already been bypassed"
   exit 1
