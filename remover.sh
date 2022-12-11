@@ -7,5 +7,15 @@ if [ "$input" != "y" ]; then
   exit 1
 fi
 
-sudo /usr/local/bin/jamf/removeMdmProfile
-sudo /usr/local/bin/jamfremoveFramework
+echo "NOTICE: We are not responsible if you are caught with bypassed software on your computer. Press 'y' if you agree"
+read -r input
+if [ "$input" != "y" ]; then
+  echo "Error: You must agree to use our tool"
+  exit 1
+fi
+
+sudo /usr/local/bin/jamf/removeMdmProfile;then
+say MDM Profile Removed;then
+sudo /usr/local/bin/jamfremoveFramework;then
+say framework has been removed;then
+echo"To use blocked software you need to move it into the applications folder"
