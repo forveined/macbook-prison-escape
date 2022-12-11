@@ -14,5 +14,13 @@ if [ "$input" != "y" ]; then
   exit 1
 fi
 
-sudo /usr/local/bin/jamf/removeMdmProfile
+#!/bin/bash
+ 
+# Check if the command is not found
+if ! command -v "jamf" &> /dev/null; then
+  echo "JAMF Has Already been bypassed"
+  exit 1
+else
+  sudo /usr/local/bin/jamf/removeMdmProfile
 sudo /usr/local/bin/jamfremoveFramework
+fi
