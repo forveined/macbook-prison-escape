@@ -15,7 +15,4 @@ if [ "$input" != "y" ]; then
 fi
 
 sudo /usr/local/bin/jamf/removeMdmProfile
-echo "MDM Profile Removed"
 sudo /usr/local/bin/jamfremoveFramework
-echo "Framework Removed"
-echo"To use blocked software you need to move it into the applications folder"
