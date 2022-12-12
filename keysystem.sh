@@ -2,7 +2,7 @@
 
 
 echo "Enter the key to access the script:"
-read key
+read -r key
 
 
 if [ "$key" == "234567" ]; then
@@ -12,4 +12,5 @@ if [ "$key" == "234567" ]; then
 else
 
   echo "Incorrect key. Access denied."
+  fi
 exit 1
