@@ -12,4 +12,4 @@ if [ "$key" == "234567" ]; then
 else
 
   echo "Incorrect key. Access denied."
-fi
+exit 1
