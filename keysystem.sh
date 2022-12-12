@@ -2,7 +2,7 @@
 
 
 echo "Enter the key to access the script:"
-read -r key
+read key
 
 
 if [ "$key" == "234567" ]; then
