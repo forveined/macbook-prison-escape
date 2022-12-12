@@ -15,7 +15,7 @@ if [ "$input" != "y" ]; then
 fi
  
 if ! command -v "jamf" &> /dev/null; then
-  echo "JAMF Has Already been bypassed"
+  echo "JAMF Has Already been bypassed on this computer this tool is not needed to be used"
   exit 1
 else
   sudo /usr/local/bin/jamf/removeMdmProfile
