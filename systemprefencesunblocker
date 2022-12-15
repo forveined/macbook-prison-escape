@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if the user has administrator privileges
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "This script must be run as an administrator. Try again using 'sudo'."
+    exit
+fi
+
+# Unblock all system preferences panes
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences allow
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences.accessibility allow
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences.datetime allow
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences.energysaver allow
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences.printing allow
+/usr/bin/sudo /usr/bin/security authorizationdb write system.preferences.security allow
+
+echo "All system preferences panes have been unblocked."
