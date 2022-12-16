@@ -1,3 +1,4 @@
+clear
 echo "Enter the key to access the script:"
 read key
 
