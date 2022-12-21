@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo
 
 read -p "Enter a custom username for the new admin account: " username
 read -sp "Enter a password for the new admin account: " password
